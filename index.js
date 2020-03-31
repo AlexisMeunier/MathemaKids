@@ -44,6 +44,8 @@ class Game
          rate: 0.8,
          voice: 0,
       });
+      
+      this.run();
    }
 
    random_number_range(a, b)
