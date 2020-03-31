@@ -90,7 +90,10 @@ class Game
 
    repeat()
    {
-      this.speaker.speak(this.calcule);
+      if(!this.win)
+      {
+         this.speaker.speak(this.calcule);
+      }
    }
 
    check_response()
