@@ -3,32 +3,72 @@
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link href="https://fonts.googleapis.com/css?family=Fredoka&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css?family=Fredoka+One&display=swap" rel="stylesheet">
    <link rel="stylesheet" href="css/style.css">
    <title>Document</title>
 </head>
 <body>
-   <button onclick="game.repeat()">Repeat</button>
-   <button onclick="game.run()">New</button>
+   <div class="wrapper flex">
+      <h1>écrit l'opération entièrement</h1>
+      <div class="flex btn--action">
+         <div onclick="game.run()"><img src="img/play.svg" alt="nouveau"></div>
+         <div onclick="game.repeat()"><img src="img/ear.svg" alt="réécouter"></div>
+         <div onclick="game.reset_response()"><img src="img/erase.svg" alt="effacer"></div>
+      </div>
 
-   <button onclick="game.add_to_response('0')">0</button>
-   <button onclick="game.add_to_response('1')">1</button>
-   <button onclick="game.add_to_response('2')">2</button>
-   <button onclick="game.add_to_response('3')">3</button>
-   <button onclick="game.add_to_response('4')">4</button>
-   <button onclick="game.add_to_response('5')">5</button>
-   <button onclick="game.add_to_response('6')">6</button>
-   <button onclick="game.add_to_response('7')">7</button>
-   <button onclick="game.add_to_response('8')">8</button>
-   <button onclick="game.add_to_response('9')">9</button>
-   <button onclick="game.add_to_response('+')">+</button>
-   <button onclick="game.add_to_response('-')">-</button>
-   <button onclick="game.add_to_response('=')">=</button>
-   <button onclick="game.reset_response()">Effacer</button>
+      <div class="flex">
+         <input type="text" id="response" readonly>
+         
+      </div>
 
-   <input type="text" id="response" readonly>
+      <div class="flex wrap">
+        <div class="flex">
+            <div class="flex number" onclick="game.add_to_response('+')">
+               <div>+</div>
+            </div>
+            <div class="flex number" onclick="game.add_to_response('-')">
+               <div>-</div>
+            </div>
+            <div class="flex number" onclick="game.add_to_response('=')">
+               <div>=</div>
+            </div>
+         </div>
+         <div class="flex wrap">
+            <div class="flex number" onclick="game.add_to_response('0')">
+               <div>0</div>
+            </div>
+            <div class="flex number" onclick="game.add_to_response('1')">
+               <div>1</div>
+            </div>
+            <div class="flex number" onclick="game.add_to_response('2')">
+               <div>2</div>
+            </div>
+            <div class="flex number" onclick="game.add_to_response('3')">
+               <div>3</div>
+            </div>
+            <div class="flex number" onclick="game.add_to_response('4')">
+               <div>4</div>
+            </div>
+            <div class="flex number" onclick="game.add_to_response('5')">
+               <div>5</div>
+            </div>
+            <div class="flex number" onclick="game.add_to_response('6')">
+               <div>6</div>
+            </div>
+            <div class="flex number" onclick="game.add_to_response('7')">
+               <div>7</div>
+            </div>
+            <div class="flex number" onclick="game.add_to_response('8')">
+               <div>8</div>
+            </div>
+            <div class="flex number" onclick="game.add_to_response('9')">
+               <div>9</div>
+            </div>
+         </div>
+      </div>
+   </div>
 
-      
    <script src="index.js"></script>
+
 </body>
 </html>
