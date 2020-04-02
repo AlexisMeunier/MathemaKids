@@ -105,6 +105,10 @@ class Game
          this.speaker.speak('Bravo, '+ this.solution);
          this.win = true;
       }
+      else if( this.response.length === this.solution.length)
+      {
+         this.speaker.speak('Ce n\'est pas la bonne réponse tu peux cliquer sur effacer et recommencer');
+      }
    }
 
    refresh_input()
