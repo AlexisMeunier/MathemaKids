@@ -24,7 +24,8 @@ h1::first-letter {
 	justify-content: center;
 }
 .wrapper {
-	height: 100vh;
+	max-width: 460px;
+	margin: auto;
     -webkit-flex-direction: column;
     -ms-flex-direction: column;
     flex-direction: column;
@@ -40,34 +41,35 @@ h1::first-letter {
     -webkit-align-items: center;
     -ms-flex-align: center;
     align-items: center;
+    height: 100vh;
 }
 .btn--action {
 	width: 100%;
 	justify-content: space-around;
 }
 .number {
-	border-radius: 50%;
-	border: 3vw white solid;
-	height: 20vw;
-	width: 20vw; 
-	background-color: #F282A7;
+	width: 30%;
 	margin: .2em;
 	color: white;
 	justify-content: center;
 	align-items: center;
 }
 .number div {
-	padding: 1rem;
-	font-size: 10vw;
-	background-color: transparent;
+	border-radius: 50%;
+	border: 15px white solid;
+	background-color: #F282A7;
+	height: 100px;
+	width: 100px;
+	text-align: center;
+	font-size: 3em;
 	border-radius: 50%;
 }
 input {
 	border: 15px solid white;
 	border-radius: 30px;
-	font-size: 10vw;
+	font-size: 3rem;
 
-	width: 80vw;
+	width: 100%;
 	text-align: center;
 
 }
