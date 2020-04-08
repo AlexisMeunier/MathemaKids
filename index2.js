@@ -53,26 +53,29 @@ class Game
 
    edit_response(nombre)
    {
-      if(nombre < 0)
+      if(!this.win)
       {
-         this.response -= Math.abs(nombre); 
+         if(nombre < 0)
+         {
+            this.response -= Math.abs(nombre); 
+         }
+         else
+         {
+            this.response += nombre; 
+         }
+   
+         if(this.response > 100)
+         {
+            this.response = 100
+         }
+   
+         if(this.response < 0)
+         {
+            this.response = 0
+         }
+   
+         this.update();
       }
-      else
-      {
-         this.response += nombre; 
-      }
-
-      if(this.response > 100)
-      {
-         this.response = 100
-      }
-
-      if(this.response < 0)
-      {
-         this.response = 0
-      }
-
-      this.update();
    }
 
    run()
@@ -89,14 +92,18 @@ class Game
    
    check_response()
    {
-      if(this.response === this.nombre)
+      if(!this.win)
       {
-         this.speaker.speak('Bravo '+this.nombre+' est la bonne réponse');
-         this.run();
-      }
-      else
-      {
-         this.speaker.speak('Dommage ce n\'est pas la bonne réponse');
+         if(this.response === this.nombre)
+         {
+            this.speaker.speak('Bravo '+this.nombre+' est la bonne réponse');
+            this.win = true;
+            setTimeout(() => this.run(), 5000);
+         }
+         else
+         {
+            this.speaker.speak('Dommage ce n\'est pas la bonne réponse');
+         }
       }
    }
 
