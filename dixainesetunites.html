@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Dixaines et Unité </title>
+</head>
+<body>
+
+   <style>
+      .container_dixaines
+      {
+         display: flex;
+         justify-content: space-between;
+      }
+
+      .container_unites
+      {
+         display: flex;
+         justify-content: space-between;
+      }
+
+
+      .dixaine
+      {
+         width: 100px;
+         height: 100px;
+         background-color: red;
+      }
+
+      .unite
+      {
+         width: 100px;
+         height: 100px;
+         background-color: green;
+      }
+   </style>
+
+   <div class="schemap">
+      <div class="container_dixaines">
+      </div>
+      
+      <div class="container_unites">
+      </div>
+   </div>
+
+   <div class="nombre">
+      <h1 class="affichage_nombre"></h1>
+   </div>
+
+   <button onclick="game.edit_response(+10)">+10</button>
+   <button onclick="game.edit_response(-10)">-10</button>
+   <button onclick="game.edit_response(+1)">+1</button>
+   <button onclick="game.edit_response(-1)">-1</button>
+   <button onclick="game.run()">restart</button>
+   <button onclick="game.check_response()">valider</button>
+      
+   <script src="index2.js"></script>
+</body>
+</html>
