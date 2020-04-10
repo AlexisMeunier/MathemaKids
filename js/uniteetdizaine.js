@@ -139,16 +139,45 @@ class Game
 
       for(let i = 0; i < unites; i++)
       {
-         let unite = document.createElement('div'); 
-         unite.classList.add('unite');
+         let unite = document.createElement('div')
+         let uTop = document.createElement('div')
+         let uLeft = document.createElement('div')
+         let uRight = document.createElement('div')
+         unite.classList.add('unite')
+
+         let topContent = document.createTextNode("1")
+         unite.appendChild(uTop)
+         unite.appendChild(uLeft)
+         unite.appendChild(uRight)
+         uTop.appendChild(topContent)
+         uTop.classList.add('side', 'top', 'uTop')
+         uLeft.classList.add('side', 'left', 'uLeft')
+         uRight.classList.add('side', 'right', 'uRight')
 
          ctn_uni.appendChild(unite);
+
       }
 
       for(let i = 0; i < dixaines; i++)
       {
          let dixaine = document.createElement('div')
+         let dTop = document.createElement('div')
+         let dLeft = document.createElement('div')
+         let dRight = document.createElement('div')
          dixaine.classList.add('dixaine');
+
+         let leftContent = document.createTextNode("1")
+         let rightContent = document.createTextNode("0")
+         dixaine.appendChild(dTop)
+         dixaine.appendChild(dLeft)
+         dixaine.appendChild(dRight)
+         dLeft.appendChild(leftContent)
+         dRight.appendChild(rightContent)
+         dTop.classList.add('side', 'top', 'dTop')
+         dLeft.classList.add('side', 'left', 'dLeft')
+         dRight.classList.add('side', 'right', 'dRight')
+
+
 
          ctn_dix.appendChild(dixaine);
       }

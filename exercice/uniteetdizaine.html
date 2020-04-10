@@ -3,10 +3,20 @@
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Dixaines et Unité </title>
-</head>
-<body>
+   <link href="https://fonts.googleapis.com/css?family=Fredoka+One|Montserrat&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="../css/style.css">
+   
+   <title>MathemaKids</title>
 
+   <!-- Global site tag (gtag.js) - Google Analytics -->
+   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-162474857-1"></script>
+   <script>
+     window.dataLayer = window.dataLayer || [];
+     function gtag(){dataLayer.push(arguments);}
+     gtag('js', new Date());
+
+     gtag('config', 'UA-162474857-1');
+   </script>
    <style>
       .container_dixaines
       {
@@ -17,42 +27,87 @@
       .container_unites
       {
          display: flex;
-         justify-content: space-between;
+
+      }
+      .unite {
+         width: 30px;
       }
 
-
-      .dixaine
-      {
-         width: 100px;
-         height: 100px;
-         background-color: red;
+      .side { 
+        position:absolute;
+        height: 25px;
+        width: 25px;
+        line-height: 25px;
+        text-align: center;
+        color: white;
+        font-family: var(--fred);
+      }
+      .top {
+        transform:rotate(-45deg) skew(15deg, 15deg);       
+      }
+      .uTop {
+        background: #33cc54;
+      }
+      .dTop {
+         background: pink;
       }
 
-      .unite
-      {
-         width: 100px;
-         height: 100px;
-         background-color: green;
+      .left {
+        transform:rotate(15deg) skew(15deg, 15deg) translate(-50%,100%);
+      }
+      .uLeft {
+        background: #2db34a;
+      }
+      .dLeft {
+         background: red;
+      }
+      
+      .right {
+        transform:rotate(-15deg) skew(-15deg, -15deg) translate(50%,100%);
+      }
+      .uRight {
+        background: #26973e;
+      }
+      .dRight {
+         background: orange;
       }
    </style>
-
-   <div class="schemap">
-      <div class="container_dixaines">
+</head>
+<body>
+   <header>
+      <h1 class="first--letter--pink border--box--shadow">
+         <span>L</span>es <span>U</span>nitées <br> <span>e</span>t <span>l</span>es <span>d</span>izaines
+      </h1>
+      <h2 class="first--letter--blue"><span>a</span>joute <span>d</span>es <span>c</span>ubes <span>à</span> <span>l</span>'unité <span>o</span>u <span>p</span>ar <span>d</span>izaine</h2>
+   </header>
+   <main>
+      <div class="wrapper">
+         <div class="schemap">
+            <div class="container_dixaines">
+            </div>
+            
+            <div class="container_unites">
+            </div>
+         </div>         
       </div>
+      <div class="nombre">
+         <h1 class="affichage_nombre"></h1>
+      </div>
+      <button onclick="game.edit_response(+10)">+10</button>
+      <button onclick="game.edit_response(-10)">-10</button>
+      <button onclick="game.edit_response(+1)">+1</button>
+      <button onclick="game.edit_response(-1)">-1</button>
+      <button onclick="game.check_response()">valider</button>
       
-      <div class="container_unites">
-      </div>
-   </div>
+   </main>
+   <footer>
+      
+   </footer>
 
-   <div class="nombre">
-      <h1 class="affichage_nombre"></h1>
-   </div>
 
-   <button onclick="game.edit_response(+10)">+10</button>
-   <button onclick="game.edit_response(-10)">-10</button>
-   <button onclick="game.edit_response(+1)">+1</button>
-   <button onclick="game.edit_response(-1)">-1</button>
-   <button onclick="game.check_response()">valider</button>
+
+
+
       
    <script src="../js/uniteetdizaine.js"></script>
 </body>
