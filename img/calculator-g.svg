@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve" width="512px" height="512px" class=""><g><g>
+	<g>
+		<g>
+			<rect x="480" y="128" width="32" height="32" data-original="#000000" class="active-path" data-old_color="#000000" fill="#ACECD5"/>
+			<rect x="480" y="192" width="32" height="32" data-original="#000000" class="active-path" data-old_color="#000000" fill="#ACECD5"/>
+			<polygon points="288,0 288,512 512,512 512,256 480,256 480,480 320,480 320,32 480,32 480,96 512,96 512,0    " data-original="#000000" class="active-path" data-old_color="#000000" fill="#ACECD5"/>
+			<path d="M0,512h224V288H0V512z M32,320h160v160H32V320z" data-original="#000000" class="active-path" data-old_color="#000000" fill="#ACECD5"/>
+			<path d="M0,224h224V0H0V224z M32,32h160v160H32V32z" data-original="#000000" class="active-path" data-old_color="#000000" fill="#ACECD5"/>
+			<rect x="352" y="208" width="96" height="32" data-original="#000000" class="active-path" data-old_color="#000000" fill="#ACECD5"/>
+			<rect x="352" y="272" width="96" height="32" data-original="#000000" class="active-path" data-old_color="#000000" fill="#ACECD5"/>
+			<polygon points="128,64 96,64 96,96 64,96 64,128 96,128 96,160 128,160 128,128 160,128 160,96 128,96    " data-original="#000000" class="active-path" data-old_color="#000000" fill="#ACECD5"/>
+			<rect x="64" y="384" width="96" height="32" data-original="#000000" class="active-path" data-old_color="#000000" fill="#ACECD5"/>
+		</g>
+	</g>
+</g></g> </svg>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link href="https://fonts.googleapis.com/css?family=Fredoka+One&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="../css/style.css">
+   
+   <title>MathemaKids</title>
+
+   <!-- Global site tag (gtag.js) - Google Analytics -->
+   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-162474857-1"></script>
+   <script>
+     window.dataLayer = window.dataLayer || [];
+     function gtag(){dataLayer.push(arguments);}
+     gtag('js', new Date());
+
+     gtag('config', 'UA-162474857-1');
+   </script>
+
+</head>
+<body>
+   <header>
+      <h1 class="first--letter--pink"><span>c</span>alcule <span>m</span>ental</h1>
+      <h2 class="first--letter--blue"><span>é</span>coute et <span>é</span>crit <span>l</span>'opération <span>e</span>ntièrement</h2>
+   </header>
+   <main>
+      <div class="wrapper flex--d--wrap flex">
+         <div class="flex btn--action">
+            <div onclick="game.run()"><img src="../img/play.svg" alt="nouveau"></div>
+            <div onclick="game.repeat()"><img src="../img/ear.svg" alt="réécouter"></div>
+            <div onclick="game.reset_response()"><img src="../img/erase.svg" alt="effacer"></div>
+         </div>
+
+         <div class="input--calculator border--box--shadow">
+            <input type="text" id="response" readonly>
+         </div>
+
+         <div class="flex flex--d--wrap">
+           <div class="flex flex--d--wrap operator">
+               <div class="number" onclick="game.add_to_response('+')">
+                  <div>+</div>
+               </div>
+               <div class="number" onclick="game.add_to_response('-')">
+                  <div>-</div>
+               </div>
+               <div class="number" onclick="game.add_to_response('=')">
+                  <div>=</div>
+               </div>
+            </div>
+            <div class="flex flex--d--wrap j--c--center">
+               <div class="number" onclick="game.add_to_response('0')">
+                  <div>0</div>
+               </div>
+               <div class="number" onclick="game.add_to_response('1')">
+                  <div>1</div>
+               </div>
+               <div class="number" onclick="game.add_to_response('2')">
+                  <div>2</div>
+               </div>
+               <div class="number" onclick="game.add_to_response('3')">
+                  <div>3</div>
+               </div>
+               <div class="number" onclick="game.add_to_response('4')">
+                  <div>4</div>
+               </div>
+               <div class="number" onclick="game.add_to_response('5')">
+                  <div>5</div>
+               </div>
+               <div class="number" onclick="game.add_to_response('6')">
+                  <div>6</div>
+               </div>
+               <div class="number" onclick="game.add_to_response('7')">
+                  <div>7</div>
+               </div>
+               <div class="number" onclick="game.add_to_response('8')">
+                  <div>8</div>
+               </div>
+               <div class="number" onclick="game.add_to_response('9')">
+                  <div>9</div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </main>
+
+   <script src="../js/calcule.js"></script>
+
+</body>
+</html>
