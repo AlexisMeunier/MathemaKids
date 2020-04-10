@@ -145,6 +145,7 @@ h2 {
 	width: 80%;
 	background-color: var(--blue);
 	border: 10px solid var(--pink);
+	margin: 2rem;
 }
 .input--calculator input {
 	border: transparent;
