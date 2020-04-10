@@ -18,58 +18,22 @@
      gtag('config', 'UA-162474857-1');
    </script>
    <style>
-      .container_dixaines
-      {
-         display: flex;
-         justify-content: space-between;
+
+
+      .container_dixaines {
+         width: 70%;
+
       }
 
-      .container_unites
-      {
-         display: flex;
+      .container_unites {
+         width: 30%;
 
       }
       .unite {
          width: 30px;
       }
-
-      .side { 
-        position:absolute;
-        height: 25px;
-        width: 25px;
-        line-height: 25px;
-        text-align: center;
-        color: white;
-        font-family: var(--fred);
-      }
-      .top {
-        transform:rotate(-45deg) skew(15deg, 15deg);       
-      }
-      .uTop {
-        background: #33cc54;
-      }
-      .dTop {
-         background: pink;
-      }
-
-      .left {
-        transform:rotate(15deg) skew(15deg, 15deg) translate(-50%,100%);
-      }
-      .uLeft {
-        background: #2db34a;
-      }
-      .dLeft {
-         background: red;
-      }
-      
-      .right {
-        transform:rotate(-15deg) skew(-15deg, -15deg) translate(50%,100%);
-      }
-      .uRight {
-        background: #26973e;
-      }
-      .dRight {
-         background: orange;
+      .dixaine {
+         width: 100px;
       }
    </style>
 </head>
@@ -82,11 +46,15 @@
    </header>
    <main>
       <div class="wrapper">
-         <div class="schemap">
-            <div class="container_dixaines">
+         <div class="cube--explan flex j--c--center">
+            <div class=""><img src="../img/d-cube.svg" alt=""> X 10</div>
+            <div class=""><img src="../img/u-cube.svg" alt=""> X 1</div>
+         </div>
+         <div class="schemap flex">
+            <div class="container_dixaines flex flex--d--wrap">
             </div>
             
-            <div class="container_unites">
+            <div class="container_unites flex flex--d--wrap">
             </div>
          </div>         
       </div>

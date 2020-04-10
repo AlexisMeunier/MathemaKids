@@ -131,11 +131,11 @@ h2 {
 }
 .number div {
 	border-radius: 50%;
-	border: 15px var(--blue) solid;
+	border: 12px var(--blue) solid;
 	background-color: #F282A7;
 	font-family: var(--fred);
-	height: 100px;
-	width: 100px;
+	height: 85px;
+	width: 85px;
 	text-align: center;
 	font-size: 3em;
 	border-radius: 50%;
@@ -158,4 +158,10 @@ h2 {
 
 .btn--action img {
 	width: 10vh;
+}
+.cube--explan {
+	margin: 3rem;
+}
+.cube--explan div img{
+	width: 35px;
 }
