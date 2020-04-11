@@ -140,7 +140,7 @@ class Game
       for(let i = 0; i < unites; i++)
       {
          let unite = document.createElement('div'); 
-         unite.classList.add('unite');
+         unite.classList.add('cubeOfUnit');
          let uCube = document.createElement('img')
          uCube.setAttribute("src", "../img/u-cube.svg");
          unite.appendChild(uCube);
@@ -151,7 +151,7 @@ class Game
       for(let i = 0; i < dixaines; i++)
       {
          let dixaine = document.createElement('div')
-         dixaine.classList.add('dixaine');
+         dixaine.classList.add('cubeOfTen');
          let dCube = document.createElement('img')
          dCube.setAttribute("src", "../img/d-cube.svg");
          dixaine.appendChild(dCube);

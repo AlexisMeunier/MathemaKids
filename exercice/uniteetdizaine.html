@@ -17,55 +17,70 @@
 
      gtag('config', 'UA-162474857-1');
    </script>
-   <style>
-
-
-      .container_dixaines {
-         width: 70%;
-
-      }
-
-      .container_unites {
-         width: 30%;
-
-      }
-      .unite {
-         width: 30px;
-      }
-      .dixaine {
-         width: 100px;
-      }
-   </style>
 </head>
 <body>
    <header>
       <h1 class="first--letter--pink border--box--shadow">
          <span>L</span>es <span>U</span>nitées <br> <span>e</span>t <span>l</span>es <span>d</span>izaines
       </h1>
-      <h2 class="first--letter--blue"><span>a</span>joute <span>d</span>es <span>c</span>ubes <span>à</span> <span>l</span>'unité <span>o</span>u <span>p</span>ar <span>d</span>izaine</h2>
+      <h2 class="first--letter--blue">
+         <span>a</span>joute 
+         <span>d</span>es 
+         <span>c</span>ubes, 
+         <span>d</span>es 
+         <span>d</span>izaines, 
+         <span>o</span>u
+         <span>d</span>es 
+         <span>u</span>nités
+         <span>p</span>uis 
+         <span>v</span>alide
+      </h2>
    </header>
    <main>
       <div class="wrapper">
-         <div class="cube--explan flex j--c--center">
-            <div class=""><img src="../img/d-cube.svg" alt=""> X 10</div>
-            <div class=""><img src="../img/u-cube.svg" alt=""> X 1</div>
+         <div class="flex j--c--center">
+            <div>
+               <div class="d--cube flex j--c--center">
+                  <img src="../img/d-cube.svg" alt="">
+               </div>
+               <div class="unit">
+                  <div onclick="game.edit_response(+10)">
+                     <div>+10</div>
+                  </div>
+                  <div onclick="game.edit_response(-10)">
+                     <div>-10</div>
+                  </div>                  
+               </div>
+            </div>
+            <div>            
+               <div class="u--cube flex j--c--center">
+                  <img src="../img/u-cube.svg" alt="">
+               </div>
+               <div class="ten">
+                  <div onclick="game.edit_response(+1)">
+                     <div>+1</div>
+                  </div>
+                  <div onclick="game.edit_response(-1)">
+                     <div>-1</div>
+                  </div>                  
+               </div>
+            </div>
+         </div>
+         <div class="flex check--n--nombre">
+            <div class="nombre flex j--c--center">
+               <div class="affichage_nombre"></div>
+            </div>
+            <div class="check flex j--c--center" onclick="game.check_response()">
+               <img src="../img/check.svg" alt="">
+            </div>
          </div>
          <div class="schemap flex">
-            <div class="container_dixaines flex flex--d--wrap">
-            </div>
-            
-            <div class="container_unites flex flex--d--wrap">
+            <div class="container_dixaines flex j--c--center flex--d--wrap">
+            </div>            
+            <div class="container_unites flex j--c--center flex--d--wrap">
             </div>
          </div>         
       </div>
-      <div class="nombre">
-         <h1 class="affichage_nombre"></h1>
-      </div>
-      <button onclick="game.edit_response(+10)">+10</button>
-      <button onclick="game.edit_response(-10)">-10</button>
-      <button onclick="game.edit_response(+1)">+1</button>
-      <button onclick="game.edit_response(-1)">-1</button>
-      <button onclick="game.check_response()">valider</button>
       
    </main>
    <footer>

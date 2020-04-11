@@ -156,12 +156,56 @@ h2 {
 	color: white;
 }
 
+
+/* Unités et dizaines */
+.container_dixaines {
+ width: 70%;
+}
+.container_unites {
+ width: 30%;
+}
+.unit, .ten {
+	margin: 1rem;
+ 	font-size: 2rem;
+ 	border: 12px var(--blue) solid;
+ 	background-color: var(--pink);
+ 	border-radius: 50px;
+ 	color: white;
+ 	text-align: center;
+}
+.unit div, .ten div {
+ 	font-family: var(--fred);
+}
+.schemap {
+	margin-top: 2rem;
+}
+.cubeOfUnit {
+	width: 40px;
+}
+.cubeOfTen {
+	width: 75px;
+}
 .btn--action img {
 	width: 10vh;
 }
-.cube--explan {
-	margin: 3rem;
+.d--cube img, .u--cube img {
+	width: 30%;
 }
-.cube--explan div img{
-	width: 35px;
+.affichage_nombre {
+ 	font-family: var(--fred);
+	font-size: 3rem;
+}
+.check img {
+	width: 25%;
+}
+.nombre, .check {
+	width: 50%;
+}
+.check--n--nombre {
+	background-color: var(--blue);
+	border-radius: 15px;
+	border: 12px solid var(--pink); 
+	color: white;
+	width: 80%;
+	margin: auto;
 }
