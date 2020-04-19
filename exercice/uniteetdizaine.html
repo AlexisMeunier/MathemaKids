@@ -21,17 +21,17 @@
 <body>
    <header>
       <h1 class="first--letter--pink border--box--shadow">
-         <span>L</span>es <span>U</span>nitées <br> <span>e</span>t <span>l</span>es <span>d</span>izaines
+         <span>L</span>es <span>U</span>nités <br> <span>e</span>t <span>l</span>es <span>d</span>izaines
       </h1>
       <h2 class="first--letter--blue">
          <span>a</span>joute 
          <span>d</span>es 
          <span>c</span>ubes, 
          <span>d</span>es 
-         <span>d</span>izaines, 
+         <span>d</span>izaines 
          <span>o</span>u
          <span>d</span>es 
-         <span>u</span>nités
+         <span>u</span>nités,
          <span>p</span>uis 
          <span>v</span>alide
       </h2>
@@ -39,11 +39,12 @@
    <main>
       <div class="wrapper">
          <div class="flex j--c--center">
-            <div>
-               <div class="d--cube flex j--c--center">
-                  <img src="../img/d-cube.svg" alt="">
+            <div class="ten flex">
+               <div class="d--cube flex j--c--center a--i--center">
+                  <div class="cubeOfTen"></div>
+                  <!-- <img src="../img/d-cube.svg" alt=""> -->
                </div>
-               <div class="unit">
+               <div class="more--less flex j--c--center flex--d--column ">
                   <div onclick="game.edit_response(+10)">
                      <div>+10</div>
                   </div>
@@ -52,18 +53,21 @@
                   </div>                  
                </div>
             </div>
-            <div>            
-               <div class="u--cube flex j--c--center">
-                  <img src="../img/u-cube.svg" alt="">
-               </div>
-               <div class="ten">
-                  <div onclick="game.edit_response(+1)">
-                     <div>+1</div>
+            <div>
+               <div class="unit flex">
+                  <div class="u--cube flex j--c--center a--i--center">
+                     <div class="cubeOfUnit"></div>
+                    <!--  <img src="../img/u-cube.svg" alt=""> -->
                   </div>
-                  <div onclick="game.edit_response(-1)">
-                     <div>-1</div>
-                  </div>                  
-               </div>
+                  <div class="more--less flex j--c--center flex--d--column ">
+                     <div onclick="game.edit_response(+1)">
+                        <div>+10</div>
+                     </div>
+                     <div onclick="game.edit_response(-1)">
+                        <div>-10</div>
+                     </div>                  
+                  </div>
+               </div>  
             </div>
          </div>
          <div class="flex check--n--nombre">

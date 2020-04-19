@@ -141,9 +141,9 @@ class Game
       {
          let unite = document.createElement('div'); 
          unite.classList.add('cubeOfUnit');
-         let uCube = document.createElement('img')
+/*         let uCube = document.createElement('img')
          uCube.setAttribute("src", "../img/u-cube.svg");
-         unite.appendChild(uCube);
+         unite.appendChild(uCube);*/
 
          ctn_uni.appendChild(unite);
       }
@@ -152,9 +152,9 @@ class Game
       {
          let dixaine = document.createElement('div')
          dixaine.classList.add('cubeOfTen');
-         let dCube = document.createElement('img')
+ /*        let dCube = document.createElement('img')
          dCube.setAttribute("src", "../img/d-cube.svg");
-         dixaine.appendChild(dCube);
+         dixaine.appendChild(dCube);*/
 
          ctn_dix.appendChild(dixaine);
       }

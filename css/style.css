@@ -45,14 +45,14 @@ h1 {
 	margin: auto;
 	text-align: center;
 	color: var(--blue);
-	font-size: 3rem;
+	font-size: 2rem;
 	background-color: #fff;
 }
 h2 {
 	text-align: center;
 	color: var(--pink);
-	font-size: 2rem;
-	margin: 1rem;
+	font-size: 1.3rem;
+	margin: .8rem;
 }
 .first--letter--blue span {
 	color: var(--blue);
@@ -108,11 +108,12 @@ h2 {
     align-items: center;
 }
 .flex--d--wrap {
-	
     -webkit-flex-wrap: wrap;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-
+}
+.flex--d--column {
+	flex-direction: column;
 }
 .btn--action {
 	width: 100%;
@@ -159,31 +160,44 @@ h2 {
 
 /* Unités et dizaines */
 .container_dixaines {
- width: 70%;
+ width: 60%;
 }
 .container_unites {
- width: 30%;
+ width: 40%;
 }
 .unit, .ten {
-	margin: 1rem;
- 	font-size: 2rem;
- 	border: 12px var(--blue) solid;
- 	background-color: var(--pink);
- 	border-radius: 50px;
- 	color: white;
- 	text-align: center;
+    margin:  0 1rem 1rem 1rem;
+    font-size: 2rem;
+    border: 10px var(--blue) solid;
+    border-radius: 28px;
+    color: var(--pink);
+    padding: .6rem;
+    height: 22vh;
 }
 .unit div, .ten div {
  	font-family: var(--fred);
 }
 .schemap {
-	margin-top: 2rem;
+	margin-top: 1rem;
+}
+.more--less {
+	margin-left: 1rem;
 }
 .cubeOfUnit {
-	width: 40px;
+	background-color: var(--orange);
+    width: 4vh;
+    height: 4vh;
+    box-shadow: 5px -4px 1px #0e0e0e;
+    margin: 3px;
+    border-radius: 4px;
 }
 .cubeOfTen {
-	width: 75px;
+	background-color: var(--blue);
+    width: 4vh;
+    height: 15vh;
+    box-shadow: 5px -4px 1px #0e0e0e;
+    margin: 3px;
+    border-radius: 4px;
 }
 .btn--action img {
 	width: 10vh;
@@ -204,7 +218,7 @@ h2 {
 .check--n--nombre {
 	background-color: var(--blue);
 	border-radius: 15px;
-	border: 12px solid var(--pink); 
+	border: 10px solid var(--pink); 
 	color: white;
 	width: 80%;
 	margin: auto;
