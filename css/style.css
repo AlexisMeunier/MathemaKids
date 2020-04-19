@@ -192,7 +192,7 @@ h2 {
     border-radius: 4px;
 }
 .cubeOfTen {
-	background-color: var(--blue);
+	background-color: var(--green);
     width: 4vh;
     height: 15vh;
     box-shadow: 5px -4px 1px #0e0e0e;
