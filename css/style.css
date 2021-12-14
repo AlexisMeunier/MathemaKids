@@ -119,6 +119,9 @@ h2 {
 	width: 100%;
 	justify-content: space-around;
 }
+.btn--action div {
+	cursor: pointer;
+}
 .operator {
 	width: 100%;
 	justify-content: center;
@@ -129,6 +132,9 @@ h2 {
 	color: white;
 	justify-content: center;
 	align-items: center;
+	cursor: pointer;
+}
+.number:hover {
 }
 .number div {
 	border-radius: 50%;
@@ -140,6 +146,11 @@ h2 {
 	text-align: center;
 	font-size: 3em;
 	border-radius: 50%;
+}
+.number:hover div {
+	transform: scale(1.1);
+	border: 12px #F282A7 solid;
+	background-color: var(--blue);
 }
 .input--calculator {
 	width: 80%;
